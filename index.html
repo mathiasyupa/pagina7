@@ -3,284 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dentalne - Centro odontológico especializado. Cuidado dental con tecnología de punta y calidez humana. Contáctanos al 0999215794 o al correo nathablue12@hotmail.com.">
-    <title>Dentalne | Clínica Odontológica Profesional</title>
-    
-    <!-- Google Fonts -->
+    <meta name="description" content="Dentalne · Odontología en el sector Fajardo, Sangolquí. Blanqueamiento, endodoncia, profilaxis y estética dental con promociones. Citas: 099 921 5794.">
+    <title>Dentalne · Odontología — Luce tu sonrisa</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="main-header" id="header">
-        <div class="header-container">
-            <a href="#" class="logo">
-                <span class="brand-dental">DENTAL</span><span class="brand-ne">NE</span>
-                <span class="subtitle-logo">Cuidado Dental Profesional</span>
+    <!-- ======= HEADER ======= -->
+    <header class="site-header" id="header">
+        <div class="shell header-inner">
+            <a href="#inicio" class="brand">
+                <img src="imagenes/272908717_309918881173710_2784092397394653103_n.jpg" alt="Dentalne" class="brand-logo">
             </a>
-            
-            <nav class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#galeria" class="nav-link">Galería</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
+            <nav class="nav" id="nav">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#promos" class="nav-link">Promociones</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#horarios" class="nav-link">Horarios</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
             </nav>
-            
             <div class="header-actions">
-                <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita%20médica." target="_blank" class="btn btn-primary btn-header">
-                    <span>Agendar Cita</span> <i class="fa-solid fa-calendar-check"></i>
+                <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita." target="_blank" rel="noopener" class="btn btn-solid btn-sm">
+                    <i class="fa-brands fa-whatsapp"></i><span>Agendar cita</span>
                 </a>
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="hero-section">
-            <div class="hero-bg-overlay"></div>
-            <div class="hero-container">
-                <div class="hero-content">
-                    <span class="badge">Tecnología & Precisión Dental</span>
-                    <h1>Odontología de Precisión para tu Familia</h1>
-                    <p class="hero-description">
-                        En Dentalne nos dedicamos a proteger y embellecer tu sonrisa mediante tratamientos preventivos y restauradores de vanguardia. La mejor tecnología odontológica a tu alcance.
+        <!-- ======= HERO ======= -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="shell hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> Odontología · Sector Fajardo</span>
+                    <h1>¡Luce tu<br><span class="grad">sonrisa!</span></h1>
+                    <p class="lead">
+                        En <strong>Dentalne</strong> combinamos tratamientos modernos y promociones pensadas para ti.
+                        Estética, salud y confianza en cada visita, en el corazón de Sangolquí.
                     </p>
                     <div class="hero-cta">
-                        <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita%20médica." target="_blank" class="btn btn-primary"><span>Agendar Cita 📱</span></a>
-                        <a href="#contacto" class="btn btn-secondary"><span>Escribir Correo</span></a>
+                        <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita." target="_blank" rel="noopener" class="btn btn-solid">
+                            <span>Reservar cita</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#promos" class="btn btn-glass"><span>Ver promociones</span></a>
                     </div>
+                    <ul class="hero-badges">
+                        <li><i class="fa-solid fa-tag"></i> Promos activas</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Bioseguridad</li>
+                        <li><i class="fa-solid fa-heart"></i> Trato cálido</li>
+                    </ul>
                 </div>
-                
-                <div class="hero-visual">
-                    <div class="main-image-wrapper">
-                        <!-- Key visual from provided resources for page 7 -->
-                        <img src="imagenes/Captura de pantalla 2026-07-13 224516.png" alt="Clínica Dentalne" class="hero-img">
-                        <div class="floating-badge-calidad">
-                            <i class="fa-solid fa-hand-holding-heart"></i>
-                            <div>
-                                <h4>Atención Dedicada</h4>
-                                <p>Resultados óptimos garantizados</p>
-                            </div>
-                        </div>
+                <div class="hero-visual reveal">
+                    <div class="logo-card">
+                        <img src="imagenes/272908717_309918881173710_2784092397394653103_n.jpg" alt="Logotipo de Dentalne">
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Grid -->
-        <section id="servicios" class="services-section">
-            <div class="container">
-                <div class="section-title-wrapper text-center">
-                    <span class="section-subtitle">Nuestras Soluciones</span>
-                    <h2 class="section-title">Especialidades a tu Medida</h2>
-                    <p class="section-desc">Ofrecemos una gama completa de tratamientos diseñados para restaurar tu salud bucal de forma integral.</p>
-                </div>
-                
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-card">
-                        <div class="service-image-holder">
-                            <img src="imagenes/272908717_309918881173710_2784092397394653103_n.jpg" alt="Salud Oral Preventiva">
-                        </div>
-                        <div class="service-content">
-                            <span class="service-category">Prevención</span>
-                            <h3>Odontología Preventiva</h3>
-                            <p>Chequeos regulares, profilaxis dental de precisión y asesoría personalizada para evitar caries y afecciones periodontales.</p>
-                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20solicito%20información%20sobre%20Odontología%20Preventiva." target="_blank" class="service-link">Consultar Especialidad <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Service 2 -->
-                    <div class="service-card">
-                        <div class="service-image-holder">
-                            <img src="imagenes/482006756_1038414134990844_7375956190294075246_n.jpg" alt="Estética Dental Avanzada">
-                        </div>
-                        <div class="service-content">
-                            <span class="service-category">Cosmética</span>
-                            <h3>Estética Dental</h3>
-                            <p>Blanqueamientos dentales de alta gama y diseños de sonrisa a la medida para devolver el brillo y color natural a tus dientes.</p>
-                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20solicito%20información%20sobre%20Estética%20Dental." target="_blank" class="service-link">Consultar Especialidad <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- Service 3 -->
-                    <div class="service-card">
-                        <div class="service-image-holder">
-                            <div class="fallback-service-image">
-                                <i class="fa-solid fa-shield-halved"></i>
-                                <span>Rehabilitación Dental</span>
-                            </div>
-                        </div>
-                        <div class="service-content">
-                            <span class="service-category">Restauración</span>
-                            <h3>Rehabilitación & Prótesis</h3>
-                            <p>Reemplazo de piezas dentales perdidas y correcciones funcionales mediante materiales avanzados y duraderos.</p>
-                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20solicito%20información%20sobre%20Rehabilitación." target="_blank" class="service-link">Consultar Especialidad <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    <div class="price-bubble b1"><small>Blanqueamiento</small><strong>$75</strong></div>
+                    <div class="price-bubble b2"><small>Luce tu sonrisa</small><strong>$14.99</strong></div>
                 </div>
             </div>
         </section>
 
-        <!-- Visual Tour Section -->
-        <section class="video-promo-section">
-            <div class="container">
-                <div class="video-card">
-                    <div class="video-info">
-                        <span class="badge-white">Calidad & Confort</span>
-                        <h2>Un Recorrido por Dentalne</h2>
-                        <p>Visita virtualmente nuestras salas clínicas y conoce de cerca el equipamiento moderno orientado a hacer de tu tratamiento dental un proceso rápido, cómodo y preciso.</p>
-                    </div>
-                    <div class="video-preview-holder">
-                        <img src="imagenes/Captura de pantalla 2026-07-13 224551.png" alt="Instalaciones Dentalne" class="video-preview-img">
-                        <div class="video-overlay" id="playTourBtn">
-                            <div class="play-btn">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                            <span>Reproducir Tour Virtual (Sugerencia)</span>
-                        </div>
-                    </div>
+        <!-- ======= PROMOCIONES ======= -->
+        <section class="promos" id="promos">
+            <div class="shell">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Promociones</span>
+                    <h2 class="section-title">Ofertas para lucir<br>tu mejor sonrisa</h2>
+                    <p class="section-desc center">Aprovecha nuestras promociones vigentes. Consulta condiciones al agendar tu cita.</p>
+                </div>
+                <div class="promo-gallery">
+                    <figure class="promo-flyer featured reveal">
+                        <span class="promo-tag">Más popular</span>
+                        <div class="flyer-img"><img src="imagenes/482006756_1038414134990844_7375956190294075246_n.jpg" alt="Promoción Luce tu sonrisa: diagnóstico, profilaxis y remoción de cálculos por USD 14.99"></div>
+                        <figcaption>
+                            <div><strong>Luce tu sonrisa</strong><span>Diagnóstico + profilaxis + ultrasonido</span></div>
+                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20quiero%20la%20promo%20Luce%20tu%20sonrisa%20($14.99)." target="_blank" rel="noopener" class="flyer-cta">$14.99 <i class="fa-solid fa-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="promo-flyer reveal">
+                        <div class="flyer-img"><img src="imagenes/Captura de pantalla 2026-07-13 224516.png" alt="Promoción de blanqueamiento dental por USD 75"></div>
+                        <figcaption>
+                            <div><strong>Blanqueamiento</strong><span>Sonrisa más blanca y radiante</span></div>
+                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20quiero%20el%20blanqueamiento%20($75)." target="_blank" rel="noopener" class="flyer-cta">$75 <i class="fa-solid fa-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="promo-flyer reveal">
+                        <div class="flyer-img"><img src="imagenes/Captura de pantalla 2026-07-13 224623.png" alt="Promoción de endodoncia desde USD 50"></div>
+                        <figcaption>
+                            <div><strong>Endodoncia</strong><span>Salvamos tus piezas dentales</span></div>
+                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20quiero%20información%20de%20endodoncia%20(desde%20$50)." target="_blank" rel="noopener" class="flyer-cta">desde $50 <i class="fa-solid fa-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="promo-flyer reveal">
+                        <div class="flyer-img"><img src="imagenes/Captura de pantalla 2026-07-13 224551.png" alt="Promoción de profilaxis con 50% de descuento"></div>
+                        <figcaption>
+                            <div><strong>Profilaxis</strong><span>Limpieza dental profunda</span></div>
+                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20quiero%20la%20profilaxis%20con%2050%25%20de%20descuento." target="_blank" rel="noopener" class="flyer-cta">50% OFF <i class="fa-solid fa-arrow-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <em class="promo-note">* Promociones por tiempo limitado. Aplican restricciones. Consulta vigencia al momento de agendar.</em>
+            </div>
+        </section>
+
+        <!-- ======= SERVICIOS ======= -->
+        <section class="services" id="servicios">
+            <div class="shell">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Servicios</span>
+                    <h2 class="section-title">Odontología completa<br>para toda la familia</h2>
+                </div>
+                <div class="svc-grid">
+                    <article class="svc reveal"><span class="svc-ico"><i class="fa-solid fa-magnifying-glass-chart"></i></span><h3>Diagnóstico</h3><p>Evaluación completa para diseñar tu plan de tratamiento ideal.</p></article>
+                    <article class="svc reveal"><span class="svc-ico"><i class="fa-solid fa-wand-magic-sparkles"></i></span><h3>Profilaxis y limpieza</h3><p>Remoción de placa y cálculo con ultrasonido para una boca sana.</p></article>
+                    <article class="svc reveal"><span class="svc-ico"><i class="fa-solid fa-star"></i></span><h3>Blanqueamiento</h3><p>Una sonrisa más blanca y radiante de forma segura.</p></article>
+                    <article class="svc reveal"><span class="svc-ico"><i class="fa-solid fa-diagram-project"></i></span><h3>Endodoncia</h3><p>Tratamientos de conducto para salvar tus dientes.</p></article>
+                    <article class="svc reveal"><span class="svc-ico"><i class="fa-solid fa-tooth"></i></span><h3>Restauraciones</h3><p>Resinas y calzas estéticas con acabados naturales.</p></article>
+                    <article class="svc reveal"><span class="svc-ico"><i class="fa-solid fa-align-center"></i></span><h3>Ortodoncia</h3><p>Alineamos tu mordida para una sonrisa armónica.</p></article>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Grid -->
-        <section id="galeria" class="gallery-section">
-            <div class="container">
-                <div class="section-title-wrapper text-center">
-                    <span class="section-subtitle">Galería Fotográfica</span>
-                    <h2 class="section-title">Instalaciones Dentalne</h2>
-                    <p class="section-desc">Instalaciones creadas bajo estrictas normas de higiene y diseñadas para tu total descanso y bienestar.</p>
+        <!-- ======= PACIENTES FELICES ======= -->
+        <section class="patients" id="pacientes">
+            <div class="shell">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-face-smile"></i> Resultados reales</span>
+                    <h2 class="section-title">Sonrisas que nos<br>llenan de orgullo</h2>
+                    <p class="section-desc center">Cada paciente que sale feliz es nuestra mayor motivación. ¡Tú podrías ser el siguiente!</p>
                 </div>
-                
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="imagenes/Captura de pantalla 2026-07-13 224516.png" alt="Dentalne 1">
+                <div class="patients-grid">
+                    <div class="patient-face reveal">
+                        <div class="face-img"><img src="imagenes/images.jpg" alt="Paciente satisfecha de Dentalne"></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="imagenes/Captura de pantalla 2026-07-13 224551.png" alt="Dentalne 2">
+                    <div class="patient-face reveal">
+                        <div class="face-img"><img src="imagenes/images (1).jpg" alt="Paciente satisfecha de Dentalne"></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="imagenes/Captura de pantalla 2026-07-13 224623.png" alt="Dentalne 3">
+                    <div class="patient-face reveal">
+                        <div class="face-img"><img src="imagenes/images (2).jpg" alt="Paciente satisfecho de Dentalne"></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="imagenes/Captura de pantalla 2026-07-13 225202.png" alt="Dentalne 4">
+                    <div class="patient-face reveal">
+                        <div class="face-img"><img src="imagenes/images (3).jpg" alt="Paciente satisfecha de Dentalne"></div>
                     </div>
+                    <div class="patient-face reveal">
+                        <div class="face-img"><img src="imagenes/images (4).jpg" alt="Paciente satisfecha de Dentalne"></div>
+                    </div>
+                </div>
+                <div class="patients-cta reveal">
+                    <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita." target="_blank" rel="noopener" class="btn btn-solid">
+                        <span>Quiero mi sonrisa ideal</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contacto" class="contact-section">
-            <div class="container">
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <span class="badge-white">Agenda Abierta</span>
-                        <h2>Escríbenos o Visítanos</h2>
-                        <p>Coordina tu cita de evaluación o haznos cualquier consulta clínica.</p>
-                        
+        <!-- ======= HORARIOS + UBICACIÓN ======= -->
+        <section class="hours-loc" id="horarios">
+            <div class="shell hl-grid">
+                <div class="hours-card reveal">
+                    <span class="eyebrow eyebrow-light">Horario de atención</span>
+                    <h2>Estamos para ti<br>casi toda la semana</h2>
+                    <ul class="hours">
+                        <li><span>Lunes – Viernes</span><strong>09:00–13:30 · 15:00–19:00</strong></li>
+                        <li><span>Sábado</span><strong>09:00–13:00</strong></li>
+                        <li><span>Domingo</span><strong>Cerrado</strong></li>
+                    </ul>
+                    <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita." target="_blank" rel="noopener" class="btn btn-white"><i class="fa-brands fa-whatsapp"></i><span>Agendar ahora</span></a>
+                </div>
+                <div class="loc-card reveal">
+                    <div class="map-frame">
+                        <iframe title="Ubicación de Dentalne"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6!2d-78.4651513!3d-0.3323219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcd798b8a819%3A0x922d71a70b67b096!2sDentalne!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="loc-address"><i class="fa-solid fa-location-dot"></i> Av. Mariana de Jesús y Panzaleo, Conjunto Arupos de la Hacienda, local 15-16 · sector Fajardo, Sangolquí.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= CONTACTO ======= -->
+        <section class="contact" id="contacto">
+            <div class="shell">
+                <div class="contact-card reveal">
+                    <div class="contact-copy">
+                        <span class="eyebrow eyebrow-light">Contáctanos</span>
+                        <h2>Agenda tu cita hoy</h2>
+                        <p>Escríbenos por el medio que prefieras y con gusto resolvemos tus dudas.</p>
                         <div class="contact-methods">
-                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita%20médica." target="_blank" class="method-item">
-                                <div class="method-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                                <div>
-                                    <h4>WhatsApp Directo</h4>
-                                    <p>0999215794</p>
-                                </div>
+                            <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita." target="_blank" rel="noopener" class="method">
+                                <span class="method-ico"><i class="fa-brands fa-whatsapp"></i></span>
+                                <span class="method-txt"><strong>WhatsApp / Citas</strong><em>099 921 5794</em></span>
                             </a>
-                            <a href="mailto:nathablue12@hotmail.com" class="method-item">
-                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
-                                <div>
-                                    <h4>Correo de Contacto</h4>
-                                    <p>nathablue12@hotmail.com</p>
-                                </div>
+                            <a href="https://www.facebook.com/dentalne/" target="_blank" rel="noopener" class="method">
+                                <span class="method-ico"><i class="fa-brands fa-facebook-f"></i></span>
+                                <span class="method-txt"><strong>Facebook</strong><em>/dentalne</em></span>
                             </a>
-                            <a href="https://www.facebook.com/dentalne/" target="_blank" class="method-item">
-                                <div class="method-icon"><i class="fa-brands fa-facebook"></i></div>
-                                <div>
-                                    <h4>Facebook Oficial</h4>
-                                    <p>dentalne</p>
-                                </div>
+                            <a href="mailto:nathablue12@hotmail.com" class="method">
+                                <span class="method-ico"><i class="fa-solid fa-envelope"></i></span>
+                                <span class="method-txt"><strong>Correo</strong><em>nathablue12@hotmail.com</em></span>
                             </a>
                         </div>
                     </div>
-                    
-                    <div class="contact-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6644265431623!2d-78.47408018524653!3d-0.3343629997611409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcd798b8a819%3A0x922d71a70b67b096!2sDentalne!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                    <div class="contact-side">
+                        <div class="social-placeholder">
+                            <span>Síguenos</span>
+                            <div class="social-row">
+                                <a href="https://www.facebook.com/dentalne/" target="_blank" rel="noopener" class="soc" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="soc" aria-label="Instagram (por definir)"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="soc" aria-label="TikTok (por definir)"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <em class="hint">Instagram y TikTok oficiales a completar en la versión final.</em>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">DENTAL<span>NE</span></span>
-                    <p class="brand-desc">Clínica de especialidades odontológicas comprometida con tu salud y bienestar dental familiar.</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Navegación</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#galeria">Galería</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-disclaimer">
-                    <h4>Demo Técnico - Pendientes</h4>
-                    <p class="demo-note">
-                        <i class="fa-solid fa-circle-info"></i> Esta es una <strong>maqueta digital de pre-venta</strong>. Se sugiere añadir los siguientes datos en el proyecto definitivo:
-                    </p>
-                    <ul class="demo-bullet-notes">
-                        <li><i class="fa-solid fa-link"></i> Enlaces directos a Instagram o TikTok.</li>
-                        <li><i class="fa-solid fa-clock"></i> Detalle de horarios y días de atención clínica.</li>
-                        <li><i class="fa-solid fa-location-arrow"></i> Detalle exacto de parqueaderos disponibles.</li>
-                    </ul>
-                </div>
+    <!-- ======= FOOTER ======= -->
+    <footer class="site-footer">
+        <div class="shell footer-grid">
+            <div class="footer-brand">
+                <img src="imagenes/272908717_309918881173710_2784092397394653103_n.jpg" alt="Dentalne" class="footer-logo">
+                <p>Odontología con estilo en el sector Fajardo, Sangolquí. ¡Luce tu sonrisa!</p>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Dentalne. Todos los derechos reservados.</p>
-                <p class="dev-signature">Diseño y Estilo Ice Blue Premium</p>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#promos">Promociones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
             </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <a href="tel:0999215794">099 921 5794</a>
+                <a href="mailto:nathablue12@hotmail.com">nathablue12@hotmail.com</a>
+                <a href="https://www.facebook.com/dentalne/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <div class="footer-note">
+                <h4><i class="fa-solid fa-circle-info"></i> Nota de demo</h4>
+                <p>Propuesta de preventa de alta fidelidad. En la versión final se completan: Instagram y TikTok, fotos reales del consultorio y video institucional.</p>
+            </div>
+        </div>
+        <div class="shell footer-bottom">
+            <p>© 2026 Dentalne · Todos los derechos reservados.</p>
+            <p>Diseño premium de preventa</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp CTA -->
-    <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita%20médica." target="_blank" class="whatsapp-floating" aria-label="Escríbenos por WhatsApp">
+    <a href="https://wa.me/593999215794?text=Hola%20Dentalne,%20deseo%20agendar%20una%20cita." target="_blank" rel="noopener" class="wa-float" aria-label="Escríbenos por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
-        <span class="floating-tooltip">¿Escribir por WhatsApp?</span>
     </a>
 
-    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
