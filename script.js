@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const timePreference = document.getElementById('timePreference').value;
             const notes = document.getElementById('notes').value;
             
-            // Obtener lÃ­nea seleccionada
+            // Obtener línea seleccionada
             const selectedLine = document.querySelector('input[name="phoneLine"]:checked').value;
             
             // Formatear mensaje para WhatsApp
-            let message = "Hola! Deseo agendar una cita mÃ©dica:\n\n";
+            let message = "Hola! Deseo agendar una cita médica:\n\n";
             message += "*Nombre completo:* " + fullName + "\n";
             message += "*Tratamiento:* " + treatment + "\n";
             message += "*Preferencia de horario:* " + timePreference + "\n";
