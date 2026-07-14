@@ -87,3 +87,38 @@
     /* ---- Año dinámico (si existe) ---- */
     document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 })();
+
+// Manejador del Formulario de Agendamiento por WhatsApp
+document.addEventListener('DOMContentLoaded', () => {
+    const appForm = document.getElementById('appointmentForm');
+    if (appForm) {
+        appForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Obtener valores
+            const fullName = document.getElementById('fullName').value;
+            const treatment = document.getElementById('treatment').value;
+            const timePreference = document.getElementById('timePreference').value;
+            const notes = document.getElementById('notes').value;
+            
+            // Obtener lÃ­nea seleccionada
+            const selectedLine = document.querySelector('input[name="phoneLine"]:checked').value;
+            
+            // Formatear mensaje para WhatsApp
+            let message = "Hola! Deseo agendar una cita mÃ©dica:\n\n";
+            message += "*Nombre completo:* " + fullName + "\n";
+            message += "*Tratamiento:* " + treatment + "\n";
+            message += "*Preferencia de horario:* " + timePreference + "\n";
+            if (notes.trim() !== "") {
+                message += "*Notas adicionales:* " + notes + "\n";
+            }
+            
+            // Codificar mensaje
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Redirigir a WhatsApp
+            const waUrl = "https://wa.me/" + selectedLine + "?text=" + encodedMessage;
+            window.open(waUrl, '_blank');
+        });
+    }
+});

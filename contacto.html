@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenda tu cita en lÃ­nea. Rellena el formulario y envÃ­anos tu solicitud directamente a nuestro WhatsApp.">
+    <title>Agendar Cita | Formulario de Contacto Directo</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<header class="site-header" id="header">
+        <div class="shell header-inner">
+            <a href="index.html#inicio" class="brand">
+                <img src="imagenes/272908717_309918881173710_2784092397394653103_n.jpg" alt="Dentalne" class="brand-logo">
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html#inicio" class="nav-link">Inicio</a>
+                <a href="index.html#promos" class="nav-link">Promociones</a>
+                <a href="index.html#servicios" class="nav-link">Servicios</a>
+                <a href="index.html#horarios" class="nav-link">Horarios</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>
+            <div class="header-actions">
+                <a href="contacto.html" target="_blank" rel="noopener" class="btn btn-solid btn-sm">
+                    <i class="fa-brands fa-whatsapp"></i><span>Agendar cita</span>
+                </a>
+                <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<main class="contact-page-main">
+    <section class="contact-form-section">
+        <div class="shell contact-grid-container">
+            <!-- Columna de InformaciÃ³n -->
+            <div class="contact-info-col reveal">
+                <span class="eyebrow">Contacto</span>
+                <h1 class="page-title">Agendar una Cita</h1>
+                <p class="lead-text">Completa el formulario y te enviaremos un mensaje a WhatsApp para confirmar tu fecha. TambiÃ©n puedes llamarnos directamente.</p>
+                
+                <div class="info-blocks">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h4>DirecciÃ³n</h4>
+                            <p>SangolquÃ­ Centro, Valle de los Chillos, Ecuador</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h4>TelÃ©fonos</h4>
+                            <p>0999215794</p>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="info-text">
+                            <h4>Horario de AtenciÃ³n</h4>
+                            <p><strong>Lunes a Viernes:</strong> 16h30 a 19h30<br><strong>SÃ¡bado y Domingo:</strong> Solo con cita previa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/593=Hola,%20deseo%20mÃ¡s%20informaciÃ³n." target="_blank" rel="noopener" class="btn btn-line btn-wa-chat">
+                    <i class="fa-brands fa-whatsapp"></i> <span>Chatear por WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Columna del Formulario -->
+            <div class="contact-form-col reveal">
+                <div class="form-card">
+                    <h3>Solicitud de Cita</h3>
+                    <p class="form-instructions">Rellena tus datos y pulsa el botÃ³n para enviarnos tu solicitud por WhatsApp.</p>
+                    
+                    <form id="appointmentForm" class="appointment-form">
+                        <div class="form-group">
+                            <label for="fullName">Nombre completo *</label>
+                            <input type="text" id="fullName" placeholder="Ej: Juan PÃ©rez" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="treatment">Tratamiento requerido *</label>
+                            <select id="treatment" required>
+                                <option value="" disabled selected>â€” Selecciona una opciÃ³n â€”</option>
+                                <option value="Profilaxis">Profilaxis (Limpieza Dental)</option>
+                                <option value="Calzas Dentales">Calzas Dentales (RestauraciÃ³n)</option>
+                                <option value="Endodoncia">Endodoncia (Tratamiento de conducto)</option>
+                                <option value="Ortodoncia">Ortodoncia (Brackets/Alineadores)</option>
+                                <option value="EstÃ©tica Dental">EstÃ©tica Dental (DiseÃ±o/Blanqueamiento)</option>
+                                <option value="Otro">Otro tratamiento / Consulta general</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timePreference">Preferencia de horario</label>
+                            <select id="timePreference">
+                                <option value="Lunes a Viernes (tardes 16:30-19:30)">Lunes a Viernes (tardes 16:30â€“19:30)</option>
+                                <option value="SÃ¡bados (con cita previa)">SÃ¡bados (con cita previa)</option>
+                                <option value="Cualquier horario disponible">Cualquier horario disponible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Enviar mensaje a</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="phoneLine" value="5930999215794" checked>
+                                    <span>LÃ­nea principal â€” 0999215794</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Notas adicionales (opcional)</label>
+                            <textarea id="notes" rows="4" placeholder="Describe brevemente tu lesiÃ³n o consulta..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-solid btn-submit">
+                            <i class="fa-brands fa-whatsapp"></i> <span>Enviar solicitud por WhatsApp</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="contact-map-section">
+        <div class="shell">
+            <div class="map-wrapper">
+                <iframe title="Ubicación de Dentalne"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6!2d-78.4651513!3d-0.3323219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5bcd798b8a819%3A0x922d71a70b67b096!2sDentalne!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+        <div class="shell footer-grid">
+            <div class="footer-brand">
+                <img src="imagenes/272908717_309918881173710_2784092397394653103_n.jpg" alt="Dentalne" class="footer-logo">
+                <p>Odontología con estilo en el sector Fajardo, Sangolquí. ¡Luce tu sonrisa!</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="index.html#inicio">Inicio</a>
+                <a href="index.html#promos">Promociones</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <a href="tel:0999215794">099 921 5794</a>
+                <a href="mailto:nathablue12@hotmail.com">nathablue12@hotmail.com</a>
+                <a href="https://www.facebook.com/dentalne/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <div class="footer-note">
+                <h4><i class="fa-solid fa-circle-info"></i> Nota de demo</h4>
+                <p>Propuesta de preventa de alta fidelidad. En la versión final se completan: Instagram y TikTok, fotos reales del consultorio y video institucional.</p>
+            </div>
+        </div>
+        <div class="shell footer-bottom">
+            <p>© 2026 Dentalne · Todos los derechos reservados.</p>
+            <p>Diseño premium de preventa</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
