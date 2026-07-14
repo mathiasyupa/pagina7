@@ -113,6 +113,8 @@ ul { list-style: none; padding: 0; }
 .hero-visual { position: relative; justify-self: center; width: 100%; max-width: 420px; }
 .logo-card { background: #fff; border-radius: var(--r-xl); padding: clamp(2rem, 5vw, 3rem); box-shadow: var(--shadow-lg); }
 .logo-card img { width: 100%; }
+.hero-photo { border-radius: var(--r-xl); overflow: hidden; border: 8px solid #fff; box-shadow: var(--shadow-lg); aspect-ratio: 4/4.3; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
 .price-bubble { position: absolute; z-index: 3; background: #fff; border-radius: var(--r-md); padding: .8rem 1.2rem; box-shadow: var(--shadow-md); text-align: center; }
 .price-bubble small { display: block; font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
 .price-bubble strong { font-family: var(--display); font-size: 1.5rem; font-weight: 800; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
